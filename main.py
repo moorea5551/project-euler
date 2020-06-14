@@ -37,18 +37,8 @@ def main():
     bigNum = 600851475143
     factors = []
     
-    #largest factor has to be half of big num or lower
-    if 0 == bigNum % 2:
-        startingNum = bigNum // 2
-    else:
-        startingNum = (bigNum + 1) // 2
     
-    for i in range(startingNum, 0, -1):
-        if 0 == bigNum % i:
-            factors.append(i)
-            print('.')
-            sys.stdout.flush()
-            
+
     print(factors)
 
         
